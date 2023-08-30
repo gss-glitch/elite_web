@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elite logo web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Rajdhani&family=Roboto+Mono:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kanit:wght@200&family=Rajdhani&family=Roboto+Mono:wght@200&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            background-image: url(black.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+
+        }
+
+        .logo {
+            background-image: url(elite\ logo.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 150px;
+            float: left;
+            margin: 0;
+            
+        }
+        .logo:hover{
+            transition: all 0.1s ease-in-out;
+            transform: translate(2px, 3px);
+            box-shadow: 6px 6px 15px 1px rgba(0, 255, 255, 0.395);
+              -webkit-box-reflect: below 1px 
+    linear-gradient(transparent,rgba(0, 0, 0, 0.397));
+
+        }
+
+        /* .navbar {
+            
+        } */
+
+        .navbar ul {
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+
+            width: 500px;
+            /* border: 1px solid red; */
+            border-radius: 50px;
+            float: right;
+            margin: 70px 0;
+
+        }
+        .navbar ul:hover{
+              -webkit-box-reflect: below 1px 
+    linear-gradient(transparent,rgba(0, 0, 0, 0.112));
+
+        }
+
+        .navbar ul a {
+            /* margin: 20px 10px; */
+            padding: 30px 25px;
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+            font-family: cursive;
+            color: cyan;
+        }
+
+        .navbar ul a:hover {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+            transition: all 0.5s;
+            
+            
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            display: inline-block;
+            width: 900px;
+            margin: 100px 100px;
+            /* margin-top: 150px; */
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 300px;
+
+
+
+
+        }
+
+        .container h1 {
+            font-family: cursive;
+            display: inline-block;
+            margin: 0px 170px;
+            color: orangered;
+            padding: 15px 0;
+            /* text-shadow: 2px 2px 6px rgb(228, 247, 255); */
+
+        }
+
+        .container p {
+            padding: 5px 50px;
+            color: darkgray;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .container1 {
+            display: grid;
+            /* grid-template-columns: 200px 100px 50px; */
+
+            grid-template-columns: 200px 500px 200px;
+            /* it defines a width between two element */
+            /* it also wrint in the form of fr  */
+            /* grid-template-columns:  500pxfirst col 500pxsec col 500px third col; */
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 1rem;
+            /* border: 1px solid red; */
+        }
+
+        /* .item {
+
+            border: 1px solid red;
+        } */
+
+        .bt {
+            margin: 0 150px;
+
+
+
+
+        }
+
+        .item {
+            color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .H {
+            display: flex;
+            color: red;
+            width: 350px;
+            /* height: 0; */
+            margin: 70px 550px;
+            /* padding: 50px 50px; */
+            text-decoration: underline;
+            text-decoration-color: cyan;
+        }
+
+        .H:hover {
+            color: rgb(132, 255, 0);
+            text-decoration: none;
+        }
+
+        .b1 {
+            color: red;
+            text-decoration: underline;
+            text-decoration-color: cyan;
+
+            margin: 10px 140px;
+            width: 100%;
+            justify-content: center;
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+
+
+        }
+
+        .b1:hover {
+            color: aqua;
+            text-decoration: none;
+            /* 
+          */
+
+        }
+
+        .bt {
+            background-color: black;
+            color: rgb(0, 229, 255);
+            /* border: 1px solid red; */
+            border-radius: 3px;
+            /* margin: 10px; */
+            padding: 4px 9px;
+
+
+        }
+
+
+        .bt:hover {
+            color: rgb(255, 255, 255);
+            box-shadow: inset 6px 6px 15px 1px rgba(255, 0, 0, 0.32), inset -5px -5px 20px 1px rgba(255, 0, 0, 0.779);
+            /* font-family: monospace; */
+            transition: all 0.1s ease-in-out;
+            transform: translate(2px, 3px);
+             -webkit-box-reflect: below 1px 
+    linear-gradient(transparent,rgba(0, 0, 0, 0.164));
+
+
+        }
+
+        /* footer { */
+            /* margin: 10px 500px; */
+
+            /* color: aliceblue;
+            text-decoration: underline;
+            text-decoration-color: ghostwhite;
+
+        } */
+        
+.center{
+background: linear-gradient(100deg, rgb(157, 157, 157),rgb(155, 255, 255));   
+border: 2px solid #3d3d3d;
+width: 400px;
+height: 400px;
+
+justify-content: center; 
+margin:  70px auto;
+border-radius: 10px;
+
+
+
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 0;
+
+}
+ form .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-bottom: 2px solid rgb(6, 205, 255);
+    /* background: none; */
+    /* outline: none;  */
+
+}
+/* .txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none; */
+
+/* .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+.txt_field input:focus ⁓  label,
+.txt_field input:valid ⁓ label{
+    top: -5px;
+    color: #2691d9;
+
+} */ 
+ .center .login{
+    justify-content: center;
+    padding: 40px ;
+    color: red;
+    margin: auto;
+}
+
+
+.neon-button{
+    color: blue;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+.neon-button:hover{
+    background-color: antiquewhite;
+}
+.pass{
+    margin-bottom: 30px;
+    /* display: grid; */
+    margin-top: 30px;
+    text-decoration: none;
+    justify-content: space-between;
+
+}
+.signup{
+    display: flex;
+    float: right;
+}
+
+
+
+
+.copy{
+    color: #ffffff;
+float: right; 
+text-decoration: underline;   
+}
+
+
+/* .info{
+  display: flex;
+  margin: 20px 500px;
+  height: 300px;
+  width: 100px;
+  border: 2px solid cyan; */
+  
+  
+/* } */
+/* .name{
+    color: whitesmoke;
+    font-family: sans-serif;
+    display: flex;
+    margin: 0px 500px;
+    font-size: 30px;
+
+} */
+
+.para{
+    /* justify-items: center; */
+    /* border: 1px solid red; */
+    margin: 50px 20px;
+    color: rgb(192, 192, 192);
+}
+
+
+
+
+.term{
+    color: white;
+    margin-left: 20px;
+}
+/* .container7{
+color: red;
+border-bottom: 1px solid rgb(140, 255, 0);
+/* margin: 10px 500px;
+width: 700px; */
+
+*/
+
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Us </a></li>
+            <li><a href="#">Backyard</a></li>
+            <li><a href="starlogo.jpg" target="_blank">More</a></li>
+
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>WEL <b style="color: rgb(128, 255, 0); font-family:cursive;">COME</b> <b style="color: cornsilk;">!</b></h1>
+        <P> <b style="color: orangered;">Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti
+            distinctio ipsam ipsum, eaque nesciunt corrupti suscipit rerum ullam obcaecati.</P>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem neque veritatis quisquam cum officiis
+            libero, ullam ex, illum amet dicta eaque, natus vel. Culpa suscipit, vero nobis dolor earum aut.</p>
+    </div>
+    <h1 class="H">OUR SERVISES &#x000BB;</h1>
+    <div class="container1">
+
+
+
+
+
+        <div class="item"> <b class=" b1">Dropshiping</b>
+            <hr>this is item-1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nulla nobis
+            reprehenderit aperiam quidem eius non nihil, itaque pariatur. Dignissimos a error ut beatae.
+            <hr>
+            <button class="bt">More</button>
+
+        </div>
+        <div class="item"> <b class=" b1">Food</b>
+            <hr> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, hic natus, consectetur quo
+            cumque autem fugit soluta aperiam laboriosam, saepe vero? Iure, eos voluptatum.this is item-2
+            <hr>
+            <button class="bt">More</button>
+        </div>
+        <div class="item"> <b class=" b1">Dilivery</b>
+            <hr>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, eius libero fugiat esse vero,
+            voluptates aliquam odio ratione enim at sint earum quasi repellat.this is item-3
+            <hr>
+            <button class="bt">More</button>
+        </div>
+        <div class="item"> <b class=" b1">Clean Food</b>
+            <hr> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, eius libero fugiat esse vero,
+            voluptates aliquam odio ratione enim at sint earum quasi repellat.this is item-3
+            <hr>
+            <button class="bt">More</button>
+        </div>
+        <div class="item"> <b class="b1">Quantity</b>
+            <hr> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, eius libero fugiat esse vero,
+            voluptates aliquam odio ratione enim at sint earum quasi repellat.this is item-3
+            <hr>
+            <button class="bt">More</button>
+        </div>
+
+        <div class="item"> <b class=" b1"> Quality</b>
+            <hr> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, eius libero fugiat esse vero,
+            voluptates aliquam odio ratione enim at sint earum quasi repellat.this is item-3
+            <hr>
+            <button class="bt">More</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Passward</label>
+                
+            </div>
+            <div class="pass">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <!-- <div class="signup">
+                <a href="#">signup</a>
+            </div> -->
+            <div>
+                <button class="neon-button">Login</button>
+            </div>
+             <div class="signup">
+                <a href="#">signup</a>
+            </div>
+        </form>
+    </div> 
+
+
+
+<div class="term">
+    <h3>TERMS AND CONDITION </h3>
+</div>
+<div class="para">
+    <p>
+        1]  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repudiandae soluta quos dignissimos nam iste fuga, quibusdam accusantium, animi doloremque pariatur dolorum ipsa dolorem error hic obcaecati! Porro, vel labore!
+        <P>
+            2]
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam voluptatum cum accusamus sit laboriosam doloremque debitis in id? Itaque odit vel magnam sint quidem saepe corporis architecto ex voluptas, beatae ratione doloremque harum id sapiente ducimus sit corrupti iusto esse repellat officiis. Mollitia numquam architecto, eos asperiores voluptatibus illo!
+
+        </P>
+
+
+        <p>
+
+            3]
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nesciunt exercitationem corporis officia aliquid quia id quos! Officia tempora ad, eveniet maxime reprehenderit architecto debitis veritatis, totam mollitia laudantium voluptatum nostrum distinctio eius explicabo labore non consequatur soluta illo accusamus at odio doloremque quidem quibusdam. Nulla, modi nesciunt. Architecto accusantium minus, debitis a amet beatae necessitatibus quisquam qui repellendus? Optio ea, odio recusandae quia in perspiciatis quos nostrum vitae, eveniet nesciunt illum. Tempore enim delectus veniam fugiat aspernatur harum eveniet corporis labore ullam facere recusandae aliquid, ipsa quasi possimus inventore, commodi natus. Animi necessitatibus magnam temporibus accusamus. Id modi fugit molestias, recusandae explicabo magni libero, voluptatem impedit animi alias consectetur nemo adipisci architecto sunt quidem odit voluptas perspiciatis eaque praesentium quasi minus corporis. Possimus, animi rem! Odio et esse deserunt quae explicabo hic qui deleniti omnis, quam consectetur! Sunt iste dolore laboriosam veritatis! Corrupti at nam adipisci dolores perferendis consectetur. Aliquam dolore omnis, obcaecati officiis deleniti laboriosam officia. Et velit reprehenderit quasi itaque repellendus. Aut rem error quis sed magni voluptatibus ullam obcaecati cupiditate, aliquid incidunt mollitia adipisci dignissimos quas consectetur, fugiat odio! Aliquam aperiam perspiciatis inventore similique labore praesentium ipsam nobis voluptatem? Iusto, obcaecati eaque odio a voluptate veritatis inventore qui animi esse saepe officiis nihil doloremque fuga ex alias reiciendis. Et rem minima dolorem labore accusantium ratione tempore unde similique. Voluptas ullam dolor dolorum ipsum? Rem officiis tempora aliquid numquam dignissimos adipisci iusto facilis esse voluptate atque, cum, sint ipsam cumque unde ratione culpa neque repudiandae amet natus modi optio obcaecati, deserunt quam! Asperiores illo ipsa et, repellat, id animi esse nostrum quae facere harum soluta, voluptatum fugiat minus eaque exercitationem dignissimos ipsam ab voluptate enim. Corrupti quidem saepe aliquid ullam eum modi dignissimos sit deleniti odio, molestias quas beatae illum ipsam, repellendus maiores iusto quam facilis animi!
+        </p>
+    </p>
+    <P>4]Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id ullam vitae dignissimos ipsam suscipit commodi sapiente obcaecati error aperiam.</P>
+
+
+ 
+
+<div class="copy">
+   <footer>
+   -Copywrite [Code With Harry]
+
+   </footer>
+
+<!-- </div> -->
+<div class="container">
+
+    Time And Date- <span id="time"></span>
+        </div>
+<script>
+function displytime(){
+    time=new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(displytime,1000);
+</script>
+
+
+</body>
+
+</html>
